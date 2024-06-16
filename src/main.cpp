@@ -47,6 +47,7 @@ void setup() {
 	//TwoWire wire = TwoWire(0);
 	//wire.begin(GPIO_NUM_37, GPIO_NUM_36);
 
+	/*
 	while(ft6336u.begin() == false) 
   	{
 		Serial.println("ft6336u is not connected.");
@@ -58,7 +59,7 @@ void setup() {
 	Serial.print("FT6336U Firmware Version: "); 
   	Serial.println(ft6336u.read_firmware_id());  
   	Serial.print("FT6336U Device Mode: "); 
-  	Serial.println(ft6336u.read_device_mode());  
+  	Serial.println(ft6336u.read_device_mode());  */
 
 	tft.init();
     //tft.initDMA();
@@ -91,6 +92,7 @@ void loop() {
 	mfrc522.PICC_DumpToSerial(&(mfrc522.uid));
 	*/
 
+	/*
 	if(intSattus)
 	{
 		intSattus = false;
@@ -126,6 +128,6 @@ void loop() {
 		Serial.print(" / "); 
 		Serial.print(ft6336u.read_touch2_misc()); 
 		Serial.println(")"); 
-	}
+	}*/
 	delay(200);
 }
